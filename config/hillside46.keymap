@@ -154,10 +154,10 @@
  */
 
             bindings = <
-&caps_word                         &kp Q         &kp W            &kp E                &kp R              &kp T                                                               &kp Y                 &kp U                &kp I                 &kp O             &kp P            &sl 5
-&hml LS(LA(LC(LEFT_COMMAND))) ESC  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LEFT_SHIFT F  &hml LA(LS(LCTRL)) G                                                &hmr RS(RA(RCTRL)) H  &hmrj RIGHT_SHIFT J  &hmr RIGHT_COMMAND K  &hmr RIGHT_ALT L  &hmr RCTRL SEMI  &kp SQT
-&kp LSHFT                          &kp Z         &kp X            &kp C                &kp V              &kp B                 &trans                             &trans     &kp N                 &kp M                &kp COMMA             &kp DOT           &kp FSLH         &kp MINUS
-                                                                                       &mo 4              &mt LEFT_SHIFT TAB    &lt 3 ENTER  &sk LSHIFT    &trans  &kp SPACE  &lt 3 BACKSPACE       &lt 2 DELETE
+&caps_word                         &kp Q         &kp W            &kp E                &kp R              &kp T                                                                          &kp Y                 &kp U                &kp I                 &kp O             &kp P            &sl 5
+&hml LS(LA(LC(LEFT_COMMAND))) ESC  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LEFT_SHIFT F  &hml LA(LS(LCTRL)) G                                                           &hmr RS(RA(RCTRL)) H  &hmrj RIGHT_SHIFT J  &hmr RIGHT_COMMAND K  &hmr RIGHT_ALT L  &hmr RCTRL SEMI  &kp SQT
+&kp LSHFT                          &kp Z         &kp X            &kp C                &kp V              &kp B                 &trans                                      &trans       &kp N                 &kp M                &kp COMMA             &kp DOT           &kp FSLH         &kp MINUS
+                                                                                       &mo 4              &mt LEFT_SHIFT TAB    &lt 3 ENTER  &kp LSHIFT    &kp RIGHT_SHIFT  &lt 2 SPACE  &lt 1 BACKSPACE       &kp DELETE
             >;
         };
 
@@ -171,28 +171,28 @@
  */
 
             bindings = <
-&kp ASTRK  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&kp ENTER  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS          &kp EQUAL            &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp BACKSPACE
-&kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE         &kp BACKSLASH &trans      &trans &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                                       &kp COMMA     &kp N0            &kp PERIOD &trans        &trans  &trans  &trans  &trans
+&kp ASTRK  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET  &kp RIGHT_BRACKET                                        &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&kp ENTER  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS          &kp EQUAL                                                &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp BACKSPACE
+&kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE         &kp BACKSLASH      &trans                        &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                                     &kp COMMA         &kp N0             &kp PERIOD  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
         SYM {
             bindings = <
-&trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON             &kp PLUS                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp TILDE             &kp PIPE    &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans &trans   &trans  &trans  &trans
+&trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON       &kp PLUS                                                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp TILDE       &kp PIPE              &trans                                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                             &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
         NAV {
             bindings = <
-&trans  &kp END    &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))    &kp HOME        &kp PG_DN  &kp PG_UP     &kp END    &kp INS  &trans
-&trans  &trans     &trans                &trans                 &trans                    &trans                       &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)             &kp LG(C)              &kp LG(V)                 &kp LG(LS(Z))    &trans  &trans          &trans          &trans     &trans        &trans     &trans   &trans
-                                         &trans                 &trans                    &trans          &trans  &trans           &trans          &trans     &trans
+&trans  &kp END    &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))                                    &kp HOME        &kp PG_DN  &kp PG_UP     &kp END    &kp INS  &trans
+&trans  &trans     &trans                &trans                 &trans                    &trans                                                       &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)             &kp LG(C)              &kp LG(V)                 &kp LG(LS(Z))              &trans                    &trans  &trans          &trans     &trans        &trans     &trans   &trans
+                                                                &trans                    &trans                     &trans  &trans    &trans  &trans  &trans          &trans
             >;
         };
 
@@ -204,28 +204,28 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bootloader  &trans        &trans        &trans        &trans        &trans          &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans  &trans  &trans
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp C_PLAY_PAUSE   &trans                &trans  &trans  &trans
-&trans       &trans        &trans        &trans        &trans        &trans   &trans  &trans     &trans  &kp C_BRI_DN       &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
-                                         &trans        &trans        &trans    &trans  &trans    &trans  &trans             &trans
+&bootloader  &trans        &trans        &trans        &trans        &trans                                          &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans  &trans  &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                    &trans  &kp C_PLAY_PAUSE   &trans                &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans        &trans                    &trans  &trans  &kp C_BRI_DN       &kp C_BRIGHTNESS_INC  &trans  &trans  &trans
+                                                       &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
         esp_lowercase {
             bindings = <
-&trans  &trans           &trans  &accent_lower_e  &trans  &trans    &trans            &accent_lower_u  &accent_lower_i  &accent_lower_o  &trans  &trans
-&trans  &accent_lower_a  &trans  &trans           &trans  &trans    &trans            &trans           &trans           &trans           &trans  &trans
-&trans  &trans           &trans  &trans           &trans  &trans  &trans  &trans &special_lower_n  &trans           &trans           &trans           &trans  &trans
-                                 &trans           &mo 6   &trans  &trans  &trans &trans            &trans           &trans
+&trans  &trans           &trans  &accent_lower_e  &trans  &trans                                    &trans            &accent_lower_u  &accent_lower_i  &accent_lower_o  &trans  &trans
+&trans  &accent_lower_a  &trans  &trans           &trans  &trans                                    &trans            &trans           &trans           &trans           &trans  &trans
+&trans  &trans           &trans  &trans           &trans  &trans  &trans                    &trans  &special_lower_n  &trans           &trans           &trans           &trans  &trans
+                                                  &trans  &mo 6   &trans  &trans    &trans  &trans  &trans            &trans
             >;
         };
 
         esp_uppercase {
             bindings = <
-&trans  &trans           &trans  &accent_upper_e  &trans  &trans    &trans            &accent_upper_u  &accent_upper_i  &accent_upper_o  &trans  &trans
-&trans  &accent_upper_a  &trans  &trans           &trans  &trans    &trans            &trans           &trans           &trans           &trans  &trans
-&trans  &trans           &trans  &trans           &trans  &trans  &trans &trans &special_upper_n  &trans           &trans           &trans           &trans  &trans
-                                 &trans           &trans  &trans &trans  &trans &trans            &trans           &trans
+&trans  &trans           &trans  &accent_upper_e  &trans  &trans                                    &trans            &accent_upper_u  &accent_upper_i  &accent_upper_o  &trans  &trans
+&trans  &accent_upper_a  &trans  &trans           &trans  &trans                                    &trans            &trans           &trans           &trans           &trans  &trans
+&trans  &trans           &trans  &trans           &trans  &trans  &trans                    &trans  &special_upper_n  &trans           &trans           &trans           &trans  &trans
+                                                  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans
             >;
         };
     };
