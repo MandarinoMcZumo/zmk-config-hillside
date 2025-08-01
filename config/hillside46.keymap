@@ -104,7 +104,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <18 19 20 21 22 6 7 8 9 10 11 23 35 34 33 32 31 30 41 40 39>;
+            hold-trigger-key-positions = <18 19 20 21 22 6 7 8 9 10 11 23 35 34 33 32 31 42 43 45 44 36 37>;
             flavor = "balanced";
             hold-trigger-on-release;
             quick-tap-ms = <175>;
@@ -118,7 +118,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <17 16 15 14 13 38 37 36 24 0 12 1 25 26 2 3 4 5 29 28 27>;
+            hold-trigger-key-positions = <17 16 15 14 13 38 24 0 12 1 25 26 2 3 4 5 29 28 27 39 40 41 30>;
             flavor = "balanced";
             hold-trigger-on-release;
             quick-tap-ms = <175>;
@@ -132,7 +132,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <17 16 15 14 13 38 37 36 24 0 12 1 25 26 2 3 4 5 29 28 27>;
+            hold-trigger-key-positions = <17 16 15 14 13 38 24 0 12 1 25 26 2 3 4 5 29 28 27 40 30 41 39>;
             flavor = "balanced";
             hold-trigger-on-release;
             quick-tap-ms = <175>;
